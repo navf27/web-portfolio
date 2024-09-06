@@ -10,8 +10,8 @@ const Profile = () => {
     <>
       <div className="bg-white h-[64px] dark:bg-[#16191e]"></div>
       {/* <div className="bg-[#D1E6FA] h-36 lg:h-[241px] grid place-content-center"> */}
-      <div className="bg-[url('bg-image.jpg')] h-36 lg:h-[241px] grid place-content-center bg-cover bg-[center_60%] relative">
-        <div className="absolute w-full h-full bg-black bg-opacity-20 dark:bg-opacity-50"></div>
+      <div className="h-36 lg:h-[241px] grid place-content-center bg-cover bg-[center_60%] relative">
+        <div className="absolute w-full h-full bg-black bg-opacity-10 dark:bg-opacity-50"></div>
         <TypeAnimation
           sequence={[
             "<",
@@ -39,7 +39,7 @@ const Profile = () => {
           deletionSpeed={3}
           repeat={Infinity}
           wrapper="div"
-          className="text-white text-2xl font-jetbrains font-medium"
+          className="text-slate-900 dark:text-white text-2xl font-jetbrains font-medium"
         />
       </div>
       <div className="relative">

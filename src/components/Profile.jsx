@@ -39,7 +39,7 @@ const Profile = () => {
           deletionSpeed={3}
           repeat={Infinity}
           wrapper="div"
-          className="text-slate-900 dark:text-white text-2xl font-jetbrains font-medium"
+          className="text-slate-800 dark:text-white text-2xl font-jetbrains font-medium"
         />
       </div>
       <div className="relative">

@@ -6,6 +6,7 @@ export default {
     extend: {
       fontFamily: {
         sanskuy: ["Open Sans"],
+        jetbrains: ["JetBrains Mono"],
       },
     },
   },

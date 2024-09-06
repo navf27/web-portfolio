@@ -3,12 +3,45 @@ import me from "../assets/img/bnw-square.jpg";
 import svg1 from "../assets/svg/SVG.svg";
 import svg2 from "../assets/svg/SVG-1.svg";
 import svg3 from "../assets/svg/SVG-3.svg";
+import { TypeAnimation } from "react-type-animation";
 
 const Profile = () => {
   return (
     <>
       <div className="bg-white h-[64px] dark:bg-[#16191e]"></div>
-      <div className="bg-[#D1E6FA] h-36 lg:h-[241px]"></div>
+      {/* <div className="bg-[#D1E6FA] h-36 lg:h-[241px] grid place-content-center"> */}
+      <div className="bg-[url('bg-image.jpg')] h-36 lg:h-[241px] grid place-content-center bg-cover bg-[center_60%] relative">
+        <div className="absolute w-full h-full bg-black bg-opacity-20 dark:bg-opacity-50"></div>
+        <TypeAnimation
+          sequence={[
+            "<",
+            200,
+            "<N",
+            200,
+            "<NA",
+            200,
+            "<NAV",
+            200,
+            "<NAVF",
+            200,
+            "<NAVF2",
+            200,
+            "<NAVF27",
+            200,
+            "<NAVF27 /",
+            200,
+            "<NAVF27 />",
+            200,
+            " ",
+            200,
+          ]}
+          speed={50}
+          deletionSpeed={3}
+          repeat={Infinity}
+          wrapper="div"
+          className="text-white text-2xl font-jetbrains font-medium"
+        />
+      </div>
       <div className="relative">
         <img
           src={me}

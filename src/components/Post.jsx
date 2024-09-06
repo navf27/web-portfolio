@@ -13,7 +13,6 @@ const Post = (props) => {
 
   useEffect(() => {
     if (likeData && likeData.length > 0) {
-      console.log(likeData);
       const postData = likeData.find((item) => item.id === props.id);
       setPostLiked(postData.liked);
     }

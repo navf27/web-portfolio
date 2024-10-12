@@ -21,9 +21,8 @@ export const MainContextProvider = ({ children }) => {
       return item;
     });
 
-    setLikeData(updatedLikeData);
-    localStorage.clear();
     localStorage.setItem("like", JSON.stringify(updatedLikeData));
+    setLikeData(updatedLikeData);
   };
 
   return (

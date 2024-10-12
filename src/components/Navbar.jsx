@@ -29,7 +29,7 @@ const Navbar = () => {
 
     const savedStorage = localStorage.getItem("like");
 
-    if (!savedStorage) {
+    if (!savedStorage || savedStorage.length < 1) {
       localStorage.setItem("like", JSON.stringify(storage));
     } else {
       const likeData = JSON.parse(localStorage.getItem("like"));

@@ -27,7 +27,7 @@ const Navbar = () => {
       setCurrentTheme("light");
     }
 
-    const savedStorage = localStorage.getItem("like");
+    const savedStorage = JSON.parse(localStorage.getItem("like"));
 
     if (!savedStorage || savedStorage.length < 1) {
       localStorage.setItem("like", JSON.stringify(storage));

@@ -60,7 +60,9 @@ const Post = (props) => {
               />
               <button
                 className={`${postLiked ? "hidden" : null}`}
-                onClick={() => onLoveClicked(props.id)}
+                onClick={() => {
+                  onLoveClicked(props.id);
+                }}
               >
                 <img
                   src={whiteLove}
@@ -71,7 +73,9 @@ const Post = (props) => {
               </button>
               <button
                 className={`${postLiked ? "hidden" : null}`}
-                onClick={() => onLoveClicked(props.id)}
+                onClick={() => {
+                  onLoveClicked(props.id);
+                }}
               >
                 <img
                   src={darkLove}
@@ -81,7 +85,9 @@ const Post = (props) => {
               </button>
               <button
                 className={`${postLiked ? "inline-block" : "hidden"}`}
-                onClick={() => onLoveClicked(props.id)}
+                onClick={() => {
+                  onLoveClicked(props.id);
+                }}
               >
                 <img
                   src={redLove}

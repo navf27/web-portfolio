@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Post from "../Post";
 import testPic from "../../assets/img/test-pic.png";
 

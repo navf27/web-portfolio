@@ -4,6 +4,7 @@ import { useMainContext } from "../context/MainContext";
 const Navbar = () => {
   const { currentTheme, setCurrentTheme, toggleTheme, setLikeData } =
     useMainContext();
+
   const storage = [
     {
       id: 1,

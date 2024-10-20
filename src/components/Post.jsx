@@ -9,14 +9,15 @@ import { useEffect, useState } from "react";
 
 const Post = (props) => {
   const { likeData, onLoveClicked } = useMainContext();
-  const [postLiked, setPostLiked] = useState(false);
+  // const [postLiked, setPostLiked] = useState(false);
+  const postLiked = likeData.find((item) => item.id === props.id);
 
-  useEffect(() => {
-    if (likeData && likeData.length > 0) {
-      const postData = likeData.find((item) => item.id === props.id);
-      setPostLiked(postData.liked);
-    }
-  }, [likeData]);
+  // useEffect(() => {
+  //   if (likeData && likeData.length > 0) {
+  //     const postData = likeData.find((item) => item.id === props.id);
+  //     setPostLiked(postData.liked);
+  //   }
+  // }, [likeData]);
 
   return (
     <div className="my-8 lg:my-2 mx-4 lg:px-[15px] lg:py-[20px] lg:w-[656px] lg:hover:bg-black lg:dark:hover:bg-white lg:hover:bg-opacity-5 lg:dark:hover:bg-opacity-5 lg:backdrop-blur-md lg:rounded-lg lg:transition-all">
@@ -59,7 +60,7 @@ const Post = (props) => {
                 className="w-4 lg:w-[20px] opacity-50 dark:opacity-100"
               />
               <button
-                className={`${postLiked ? "hidden" : null}`}
+                className={`${postLiked?.liked ? "hidden" : null}`}
                 onClick={() => {
                   onLoveClicked(props.id);
                 }}
@@ -72,7 +73,7 @@ const Post = (props) => {
                 />
               </button>
               <button
-                className={`${postLiked ? "hidden" : null}`}
+                className={`${postLiked?.liked ? "hidden" : null}`}
                 onClick={() => {
                   onLoveClicked(props.id);
                 }}
@@ -84,7 +85,7 @@ const Post = (props) => {
                 />
               </button>
               <button
-                className={`${postLiked ? "inline-block" : "hidden"}`}
+                className={`${postLiked?.liked ? "inline-block" : "hidden"}`}
                 onClick={() => {
                   onLoveClicked(props.id);
                 }}

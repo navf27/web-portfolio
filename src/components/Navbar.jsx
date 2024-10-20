@@ -32,8 +32,7 @@ const Navbar = () => {
     if (!savedStorage || savedStorage.length < 1) {
       localStorage.setItem("like", JSON.stringify(storage));
     } else {
-      const likeData = JSON.parse(localStorage.getItem("like"));
-      setLikeData(likeData);
+      setLikeData(savedStorage);
     }
 
     console.log(`system in dark mode: ${defaultTheme}`);

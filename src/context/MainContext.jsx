@@ -12,7 +12,7 @@ export const MainContextProvider = ({ children }) => {
   };
 
   const onLoveClicked = (id) => {
-    const updatedLikeData = likeData.map((item) => {
+    const updatedLikeData = likeData?.map((item) => {
       if (item.id === id && item.liked === false) {
         return { ...item, liked: true };
       } else if (item.id === id && item.liked === true) {

@@ -9,7 +9,6 @@ const Profile = () => {
   return (
     <>
       <div className="bg-white h-[64px] dark:bg-[#16191e]"></div>
-      {/* <div className="bg-[#D1E6FA] h-36 lg:h-[241px] grid place-content-center"> */}
       <div className="h-36 lg:h-[241px] grid place-content-center bg-cover bg-[center_60%] relative">
         <div className="absolute w-full h-full bg-black bg-opacity-10 dark:bg-opacity-50"></div>
         <TypeAnimation
@@ -49,7 +48,11 @@ const Profile = () => {
           className="w-[87px] lg:w-[148px] rounded-full border-4 border-black dark:border-[#f8f9fb] absolute top-0 left-4 lg:left-[70px] -translate-y-1/2"
         />
         <div className="flex justify-end pt-2 lg:pt-[10px] lg:pe-14">
-          <button className="bg-[#CC0088] mt-2 me-4 px-4 lg:px-0 py-2 lg:py-0 lg:w-[106px] lg:h-[40px] rounded-full text-white text-sm font-bold flex items-center lg:justify-center gap-1 lg:gap-2 relative">
+          <a
+            href="https://github.com/navf27"
+            className="bg-[#CC0088] mt-2 me-4 px-4 lg:px-0 py-2 lg:py-0 lg:w-[106px] lg:h-[40px] rounded-full text-white text-sm font-bold flex items-center lg:justify-center gap-1 lg:gap-2 relative"
+            target="blank"
+          >
             <div className="w-full h-full absolute left-0 border-4 border-transparent hover:border-black dark:hover:border-[#f8f9fb] rounded-full"></div>
             <p className="lg:text-[16px]">Follow</p>
             <svg
@@ -66,9 +69,9 @@ const Profile = () => {
                 d="M10 0c5.523 0 10 4.59 10 10.253 0 4.529-2.862 8.371-6.833 9.728-.507.101-.687-.219-.687-.492 0-.338.012-1.442.012-2.814 0-.956-.32-1.58-.679-1.898 2.227-.254 4.567-1.121 4.567-5.059 0-1.12-.388-2.034-1.03-2.752.104-.259.447-1.302-.098-2.714 0 0-.838-.275-2.747 1.051A9.396 9.396 0 0 0 10 4.958a9.375 9.375 0 0 0-2.503.345C5.586 3.977 4.746 4.252 4.746 4.252c-.543 1.412-.2 2.455-.097 2.714-.639.718-1.03 1.632-1.03 2.752 0 3.928 2.335 4.808 4.556 5.067-.286.256-.545.708-.635 1.371-.57.262-2.018.715-2.91-.852 0 0-.529-.985-1.533-1.057 0 0-.975-.013-.068.623 0 0 .655.315 1.11 1.5 0 0 .587 1.83 3.369 1.21.005.857.014 1.665.014 1.909 0 .271-.184.588-.683.493C2.865 18.627 0 14.783 0 10.253 0 4.59 4.478 0 10 0"
               />
             </svg>
-          </button>
+          </a>
         </div>
-        <div className="px-4 mt-1 lg:px-[72px] lg:mt-[25px]">
+        <div className="px-5 mt-1 lg:px-[72px] lg:mt-[25px]">
           <div className="flex items-center gap-2">
             <h1 className="text-2xl lg:text-4xl font-bold tracking-wide">
               Naufal Aji
@@ -126,7 +129,7 @@ const Profile = () => {
           <div className="my-3 flex items-center gap-4 lg:gap-5">
             <div className="w-fit flex items-center gap-1">
               <img src={svg1} alt="" className="lg:w-[21px]" />
-              <div className="mt-1 lg:mt-0">
+              <div>
                 <p className="text-xs lg:text-[16px]">Available</p>
               </div>
             </div>
@@ -134,16 +137,14 @@ const Profile = () => {
               <img src={svg2} alt="" className="lg:w-[20px]" />
               <a
                 href="#"
-                className="text-xs mt-2 lg:mt-0 lg:text-[16px] font-bold text-[#CC0088] border-b-4 border-transparent hover:border-[#CC0088]"
+                className="text-xs mt-1 lg:mt-1 lg:text-[16px] font-bold text-[#CC0088] border-b-4 border-transparent hover:border-[#CC0088]"
               >
                 /resume
               </a>
             </div>
             <div className="w-fit flex items-center gap-1">
               <img src={svg3} alt="" className="lg:w-[20px]" />
-              <p className="text-xs mt-1 lg:mt-0 lg:text-[16px]">
-                Joined Aug 24
-              </p>
+              <p className="text-xs lg:text-[16px]">Joined Aug 24</p>
             </div>
           </div>
         </div>

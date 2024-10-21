@@ -20,7 +20,7 @@ const Post = (props) => {
   // }, [likeData]);
 
   return (
-    <div className="my-8 lg:my-2 mx-4 lg:px-[15px] lg:py-[20px] lg:w-[656px] lg:hover:bg-black lg:dark:hover:bg-white lg:hover:bg-opacity-5 lg:dark:hover:bg-opacity-5 lg:backdrop-blur-md lg:rounded-lg lg:transition-all">
+    <div className="my-8 lg:my-2 mx-5 lg:px-[15px] lg:py-[20px] lg:w-[656px] lg:hover:bg-black lg:dark:hover:bg-white lg:hover:bg-opacity-5 lg:dark:hover:bg-opacity-5 lg:backdrop-blur-md lg:rounded-xl lg:transition-all">
       <div
         className={`flex gap-1 items-center ps-7 mb-3 ${
           props.pinned ? "visible" : "hidden"
@@ -33,7 +33,7 @@ const Post = (props) => {
         <div className="h-full w-[40px] shrink-0">
           <img src={me} alt="" className="rounded-full" />
         </div>
-        <div>
+        <div className="w-full">
           <div className="flex items-center">
             <p className="text-sm lg:text-[14px] font-extrabold">Naufal ✨</p>
             <p className="mx-2 border border-slate-600 bg-slate-600 rounded-full h-[3px] w-[3px]"></p>
